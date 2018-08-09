@@ -161,7 +161,11 @@ conHandler = document.getElementById('con');
                     console.log(questions[i-1].answer);
                     if(ans === questions[i-1].answer)
                     {
+                        responsiveVoice.speak(`Congratulation your answer is correct`);
                         count++;
+                    }
+                    else{
+                        responsiveVoice.speak(`Sorry the correct answer was ${questions[i-1].answer}`);
                     }
                     console.log(count);
                 });
@@ -176,6 +180,10 @@ conHandler = document.getElementById('con');
                     if(ans === questions[i-1].answer)
                     {
                         count++;
+                        responsiveVoice.speak(`Congratulation your answer is correct`);
+                    }
+                    else{
+                        responsiveVoice.speak(`Sorry the correct answer was ${questions[i-1].answer}`);
                     }
                     console.log(count);
                 });
@@ -191,6 +199,10 @@ conHandler = document.getElementById('con');
                     if(ans === questions[i-1].answer)
                     {
                         count++;
+                        responsiveVoice.speak(`Congratulation your answer is correct`);
+                    }
+                    else{
+                        responsiveVoice.speak(`Sorry the correct answer was ${questions[i-1].answer}`);
                     }
                     console.log(count);
                 });
