@@ -123,6 +123,21 @@ conHandler = document.getElementById('con');
                         btn1Handler.disabled = true;
                         btn2Handler.disabled = true;
                         btn3Handler.disabled = true;
+                        if(count <= 5)
+                        {
+                            responsiveVoice.speak(`You should start studying ${name}`);
+                        }
+                        else if(count > 5 && count <= 8)
+                        {
+                            responsiveVoice.speak(`Good Job ${name} try to score more marks next time`);
+                        }
+                        else if(count ===  9)
+                        {
+                            responsiveVoice.speak(`Excellent ${name} try to score full marks next time`);
+                        }
+                        else{
+                            responsiveVoice.speak(`Congratulation ${name} you have scored 10 on 10`);
+                        }
                         swal(`Here's your score ${name.charAt(0).toUpperCase() + name.slice(1,name.length)}!`, `${count} out of ${questions.length-1}.`,{
                             buttons: {
                                 cancel: "OK!",
