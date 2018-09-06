@@ -1,6 +1,6 @@
 startHandler = document.getElementById('start');
 const letters = /"((?:\\.|[^"\\])*)"/;
-const key = 'SBrwJgoFzvJcoBbmMr';
+const key = ''; //Your api Key
 startHandler.addEventListener("keyup", function(event){
     if(startHandler.value.match(letters))
     {
